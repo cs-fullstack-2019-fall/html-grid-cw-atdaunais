@@ -1,0 +1,41 @@
+#container{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+    grid-gap: 10px;
+    grid-auto-rows: 250px;
+}
+
+header{
+    grid-area: header;
+    background-color: grey;
+}
+
+article{
+    grid-area: nav;
+    background-color: navajowhite;
+}
+
+section{
+    grid-area: section;
+    background-color: darkgrey;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightgray;
+}
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+}
+
+header, footer, aside, section, article{
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
